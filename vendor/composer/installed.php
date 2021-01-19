@@ -6,7 +6,7 @@
     'aliases' => 
     array (
     ),
-    'reference' => 'bdd298d6efa81a6e08c6f758a92b096ac1934404',
+    'reference' => '11022e7f6e6f12b4e6d9f3495fc74e512acbab16',
     'name' => 'laravel/laravel',
   ),
   'versions' => 
@@ -187,12 +187,12 @@
     ),
     'graham-campbell/markdown' => 
     array (
-      'pretty_version' => 'v10.3.1',
-      'version' => '10.3.1.0',
+      'pretty_version' => 'v10.3.0',
+      'version' => '10.3.0.0',
       'aliases' => 
       array (
       ),
-      'reference' => 'c9978137be1e6896d9a2ca39aa3d2c62d0700ca1',
+      'reference' => 'e076ed4bc8e98f0444b996acdd6042f6f45fe7c2',
     ),
     'guzzlehttp/guzzle' => 
     array (
@@ -485,7 +485,7 @@
       'aliases' => 
       array (
       ),
-      'reference' => 'bdd298d6efa81a6e08c6f758a92b096ac1934404',
+      'reference' => '11022e7f6e6f12b4e6d9f3495fc74e512acbab16',
     ),
     'laravel/nexmo-notification-channel' => 
     array (
@@ -915,8 +915,8 @@
     array (
       'provided' => 
       array (
-        0 => '1.0',
-        1 => '1.0.0',
+        0 => '1.0.0',
+        1 => '1.0',
       ),
     ),
     'psr/simple-cache' => 

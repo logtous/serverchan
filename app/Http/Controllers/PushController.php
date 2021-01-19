@@ -7,6 +7,7 @@ use App\User;
 use Illuminate\Http\Request;
 use Hashids;
 use Illuminate\Support\Facades\Auth;
+use GrahamCampbell\Markdown\Facades\Markdown;
 use GuzzleHttp\Client;
 
 class PushController extends Controller
@@ -39,7 +40,8 @@ class PushController extends Controller
             $msg = new Msg();
             $msg['user_id'] = $user['id'];
             $msg['title'] = $title;
-            $msg['content'] = $content;
+//            $msg['content'] = $content;
+            $msg['content'] = Markdown::convertToHtml($content);
             $msg['channel'] = $channel;
             $msg->save();
 
