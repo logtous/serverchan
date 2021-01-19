@@ -7,7 +7,6 @@ use App\User;
 use Illuminate\Http\Request;
 use Hashids;
 use Illuminate\Support\Facades\Auth;
-use GrahamCampbell\Markdown\Facades\Markdown;
 use GuzzleHttp\Client;
 
 class PushController extends Controller
@@ -73,8 +72,8 @@ class PushController extends Controller
             'template_id' => env('WECHAT_OFFICIAL_ACCOUNT_TEMPLATE_ID'),
             'url' => $url,
             'data' => [
-                'title' => Markdown::convertToHtml($msg['title']),
-                'content' => Markdown::convertToHtml($msg['content']),
+                'title' => $msg['title'],
+                'content' => $msg['content'],
             ],
         ]);
 
